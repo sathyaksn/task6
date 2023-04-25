@@ -1,0 +1,19 @@
+class Movie {
+    constructor(title, studio, rating ) {
+        this.title = title;
+        this.studio = studio;
+        this.rating = rating;
+    }
+    static themovie(cinema) {
+        let  themovie= cinema.filter((movie) => movie.rating =="PG");
+        return themovie;
+    }
+}
+
+let a = new Movie("Casino Royale", "Eon Productions", "PG13");
+let b = new Movie("klaus", "Sergio pablos","PG");
+let c= new Movie("Top Gun", "paramont pictures", "PG");
+
+
+console.log(Movie.themovie([a, b, c]));
+
