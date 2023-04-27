@@ -1,0 +1,18 @@
+class Uber {
+    constructor(bsseFare=60,distancefareupto20kms=12/km,distancefareafter20kms=18/km,PerMinutefare=1,BookingFee=10){
+    this.BaseFare=BaseFare;
+    this.distancefareupto20kms=CostPerMile
+    this.distancefareafter20kms=CostPerMinute;
+    this.BookingFee=BookingFee;
+    
+    }
+    totalPrice()
+    {
+        console.log((this.BaseFare)+(this.distancefareupto20kms)+
+        (this.distancefareafter20kms)+(Bookingfee))
+    }
+}
+let u=new Uber()
+u.totalPrice(50,100); 
+u.totalPrice(60,120);
+
