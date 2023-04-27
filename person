@@ -1,0 +1,50 @@
+class person {
+    constructor(Name,FatherName,MotherName,Gender,Age,Address,MobileNo,Email) {
+   {
+     this.Name = Name ;
+    this.Father_Name = FatherName ;
+    this.Mother_Name = MotherName;
+    this.Gender = Gender; 
+    this.Age=Age
+    this.Address = Address ;
+    this.Mobile_No = MobileNo; ;
+    this.Email = Email;
+   }
+    personname() {
+    return `my name is ${this.Name}`;
+    }
+    personfathername() {
+    return `my father name is ${this.FatherName}`;
+    }
+    personmothername() {
+    return `my mother name is ${this.MotherName}`;
+    }
+    persongender() {
+    return `i am a ${this.Gender}`;
+    }
+    personage() {
+        return `my age is ${this.Age}`;
+        }
+    personaddress() {
+    return `my address is ${this.Address}`;
+    }
+    personmobileno() {
+    return `my mobileno is ${this.MobileNo}`;
+    }
+    personEmail() {
+    return `my email id is ${this.Email}`;
+    }
+    
+    }
+    
+    const person_obj = new person("sathyanarayanan","krishnannasamy","balamani","male","22","tiruppur","9750539455","vijaysathi2001@gmail.com");
+    console.log(person_obj.personname());
+    console.log(person obj.personfathername());
+    console.log(person_obj.personmothername());
+    console.log(person_obj.persongender());
+    console.log(person_obj.personage());
+    console.log(person_obj.personaddress());
+    console.log(person_obj.personmobileno());
+    console.log(person_obj.personEmail());
+
+    
