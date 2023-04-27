@@ -1,0 +1,33 @@
+
+const given= require('https://rest-countries.com/v3.1/all');
+
+
+// Get the countries from the asia continent /region using the filter function
+
+let asia = given.data.filter((a) => a.region == "Asia")
+
+// console.log(asia)
+
+
+// Get all the countries with population less than 2lakh by using fliter function
+
+let population = given.data.filter((p) => p.population < 200000)
+
+// console.log(population)
+
+
+// Print the total population of the countries using reduce function
+
+let totalPopulation = given.data.reduce((previousvalue, currentvalue) => previousvalue + currentvalue.population,0)
+
+// console.log(totalPopulation)
+
+//print the country which uses Usdollars as currency
+
+   for(i=0;i<data.length;i++){
+        if(data[i].currency[0].code==="USD")
+       {
+           console.log("name:",data[i].name,"==>",data[i].currency[0].code)
+       }
+     
+    }
